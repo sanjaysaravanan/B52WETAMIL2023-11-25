@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* All the immediate Children */
+      /* .sample-one > * {
+        background-color: blue;
+      } */
+      /* All the immediate para tag children */
+      /* .sample-one > p {
+        background-color: aqua;
+      } */
+
+      /* all the children irrespective of whether it is immedite or grand-child */
+      .sample-one p {
+        background-color: aqua;
+      }
+
+      .sample-two > h1:first-child {
+        color: green;
+      }
+      .sample-two > h1:last-child {
+        color: blue;
+      }
+      .sample-two > h1:nth-child(3) {
+        color: maroon;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Inner Children Selection</h1>
+    <div class="sample-one">
+      <span>B52WETAMIL</span>
+      <p>B52WETAMIL</p>
+      <div>
+        <p>B52WETAMIL</p>
+      </div>
+    </div>
+
+    <div class="sample-two">
+      <h1>B52WETAMIL</h1>
+      <h1>B52WETAMIL</h1>
+      <h1>B52WETAMIL</h1>
+      <h1>B52WETAMIL</h1>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+:root {
+  --bg-primary: #0a2331;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  padding: 16px;
+  background-color: var(--bg-primary);
+  margin-bottom: 80vh;
+}
+
+footer {
+  padding: 48px;
+  background-color: var(--bg-primary);
+}

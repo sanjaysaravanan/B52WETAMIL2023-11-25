@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+      }
+
+      .container > div {
+        height: 184px;
+        margin: 8px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 134px;
+      }
+
+      .big-div {
+        flex-basis: 250px;
+        min-width: 250px;
+      }
+
+      .container > div:nth-of-type(odd) {
+        background-color: aqua;
+      }
+
+      .container > div:nth-of-type(even) {
+        background-color: red;
+      }
+
+      /* body > div > div {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 200px;
+        border: 1px solid;
+        margin: 4px;
+        height: 100px;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- <div style="display: flex; flex-wrap: wrap">
+      <div></div>
+      <div></div>
+    </div> -->
+    <div class="container">
+      <div class="big-div"></div>
+      <div class="big-div"></div>
+      <div class="big-div"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

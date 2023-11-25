@@ -1,0 +1,28 @@
+
+Topics:
+
+  simple layout designs
+
+    1. Using flex & Media Queries
+
+  css selections:
+    inner child
+    immediate child
+    nth child
+    nth-of-type: odd/even
+
+  CSS Variables
+
+  state classes:
+    hover, active, visited( a ), focus, focus-visible ( input)
+
+  transition:
+    rotate
+    translate
+    scale
+    skew
+
+
+Next Session:
+  animation
+  pseudo-class ( before, after )

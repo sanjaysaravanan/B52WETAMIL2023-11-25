@@ -1,0 +1,56 @@
+.div-one {
+  background-color: aqua;
+  height: 200px;
+  width: 200px;
+  transition: all 0.5s ease;
+  transform: skewX(45deg);
+  /* transition: width 0.5s ease; */
+}
+
+.div-one:hover {
+  background-color: maroon;
+  /* height: 300px;
+  width: 300px; */
+  /* transform: rotate(180deg); */
+  transform: scale(2) translate(100px, 100px);
+}
+
+p:hover {
+  color: yellow;
+}
+
+/* a:hover {
+  font-size: 32px;
+} */
+
+.icon {
+  border-radius: 50%;
+  padding: 8px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: #bbb;
+}
+
+/* a:focus {
+  font-size: 24px;
+} */
+
+.icon:focus {
+  background-color: #bbb;
+}
+
+input:focus, input:focus-visible {
+  border: 3px solid red;
+  outline: none;
+}
+
+a:active {
+  color: green;
+}
+
+/* a:visited {
+  color: red;
+} */

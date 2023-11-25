@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .highlight {
+        border: 2px solid;
+        margin: 16px;
+        min-height: 200px;
+        border-radius: 30px;
+        text-align: center;
+      }
+
+      .sidebar {
+        width: calc(30% - 36px);
+        height: 100vh;
+      }
+
+      .main-content {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: start;
+        height: 100vh;
+      }
+
+      .main-content-row-1-col-1 {
+        width: calc(30% - 36px);
+        height: 200px;
+      }
+
+      .main-content-row-1-col-2 {
+        width: calc(70% - 36px);
+        height: 200px;
+      }
+      .main-content-row-2-col-1 {
+        width: calc(50% - 36px);
+        height: 200px;
+      }
+
+      .main-content-row-2-col-2 {
+        width: calc(50% - 36px);
+        height: 200px;
+      }
+      .main-content-row-3-col-1 {
+        width: calc(33.33% - 36px);
+        height: 200px;
+      }
+
+      .main-content-row-3-col-2 {
+        width: calc(33.33% - 36px);
+        height: 200px;
+      }
+      .main-content-row-3-col-3 {
+        width: calc(33.33% - 36px);
+        height: 200px;
+      }
+
+      @media screen and (min-width: 601px) and (max-width: 900px) {
+        .main-content-row-1-col-1,
+        .main-content-row-1-col-2,
+        .main-content-row-3-col-1,
+        .main-content-row-3-col-2,
+        .main-content-row-3-col-3 {
+          width: calc(50% - 36px);
+        }
+      }
+
+      @media screen and (min-width: 200px) and (max-width: 600px) {
+        .main-content > div {
+          width: calc(100% - 36px);
+        }
+        .main-content {
+          width: 100%;
+        }
+        .sidebar {
+          display: none;
+          /* width: calc(100% - 36px); */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar highlight"></aside>
+      <main class="main-content">
+        <div class="main-content-row-1-col-1 highlight">row-1-col-1</div>
+        <div class="main-content-row-1-col-2 highlight">row-1-col-2</div>
+        <div class="main-content-row-2-col-1 highlight">row-2-col-1</div>
+        <div class="main-content-row-2-col-2 highlight">row-2-col-2</div>
+        <div class="main-content-row-3-col-1 highlight">row-3-col-1</div>
+        <div class="main-content-row-3-col-2 highlight">row-3-col-2</div>
+        <div class="main-content-row-3-col-3 highlight">row-3-col-3</div>
+      </main>
+    </div>
+  </body>
+</html>
